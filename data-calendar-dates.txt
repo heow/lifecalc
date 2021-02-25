@@ -1,0 +1,6 @@
+1969-07-20 moon landing
+1981-02-08 Borkdude born
+2000-01-01 millennium
+2001-09-11 911
+2007-10-16 Clojure release at LispNYC
+2019-09-19 Babashka initial commit on Github
