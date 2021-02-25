@@ -3,7 +3,7 @@
 (require '[babashka.deps :as deps])
 (deps/add-deps '{:deps {cljc.java-time/cljc.java-time {:mvn/version "0.1.12"}}})
 
-(ns lifeday
+(ns lifcal
   (:require [cljc.java-time.local-date :as ld]
             [cljc.java-time.temporal.chrono-unit :as cu]
             [clojure.string :as str]
@@ -38,10 +38,10 @@
                          ["-s" "--stdin"               "Read or pipe in from STDIN"]
                          ["-e" "--export"              "EXPORT state to bash"]
                          ["-h" "--help" ]] )
-        all-opts (merge default-user (edn/read-string (System/getenv "LIFEDAY")) options) ] ; merge all options
+        all-opts (merge default-user (edn/read-string (System/getenv "LIFECAL")) options) ] ; merge all options
     (cond
       (or (:help options) (not (nil? errors))) (println (str summary "\n" errors))
-      (:export options)   (println (str "export LIFEDAY='" (pr-str (dissoc all-opts :export)) "'"))
+      (:export options)   (println (str "export LIFECAL='" (pr-str (dissoc all-opts :export)) "'"))
       :else (let [user    (update all-opts :birthday ld/parse) ; parse bday
                   cal     (make-cal (:birthday user) (:lifespan user)) ]
               (doseq [s (if (:stdin options) (map (fn[x] (first (str/split x #" "))) (str/split-lines (slurp *in*)))
