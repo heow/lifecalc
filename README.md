@@ -62,7 +62,7 @@ Or handily a percentage
     $ ./lifecalc.clj 50%
     14811
 
-# Advanced Usage - Stdin
+# Advanced Usage - Standard In and Unix Pipes
 
 Lifecalc can read from stdin using the _-s_ or _-stdin_ options.  So given a file like this
 
