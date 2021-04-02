@@ -1,6 +1,11 @@
 1969-07-20 moon landing
 1981-02-08 Borkdude born
-2000-01-01 millennium
-2001-09-11 911
+1989-11-09 Berlin Wall is taken down
+1992-06-15 US Vice-President Dan Quayle can't spell "potato"
+1998-06-01 Digital Equpiment Corporation (DEC) sold and dismantled
+2000-01-01 Y2K
+2001-11-16 Harry Potter and the Plilosophers Stone film released in theaters
 2007-10-16 Clojure release at LispNYC
+2008-09-28 SpaceX Falcon 1 launches to orbit
 2019-09-19 Babashka initial commit on Github
+2021-03-04 ABBA's 50th anniversary of "Waterloo"
