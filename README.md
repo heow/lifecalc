@@ -1,7 +1,7 @@
 # Life Calc - a tool for your ages
 
 *"Train yourself to let go of everything you fear to lose."*  
-- Yoda
+– Yoda
 
 Ever wonder how much time has past and how much you have remaining?  This is the tool for you.
 
