@@ -16,7 +16,7 @@ If you are _Borkdude_ just run it as is.
     $ ./lifecalc.clj 
     Borkdude is 14663 days old, expiration in 14959 days. (50.50% remaining)
 
-Otherwise feed it your information, lifespan is in years.
+Otherwise feed it your information.  Lifespan is in years, [look yours up here](https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy).
 
     $ ./lifecalc.clj --name Hubert --lifespan 75.5 -b 1969-03-26
     Hubert is 19000 days old, expiration in 8576 days. (31.10% remaining)
