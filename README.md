@@ -94,7 +94,7 @@ You can get the peronal days of every calendar date.
     14102
     14634
 
-To add more perspecitve, included is a small program _interleave-with.clk_ which interleaves standard-in with a file.  Thus you can go full circle complete with explanations.
+To add more perspecitve, included is a small program _interleave-with.clj_ which interleaves standard-in with a file.  Thus you can go full circle complete with explanations.
 
     $ cat data-calendar-dates.txt  | ./lifecalc.clj -s | ./interleave-with.clj data-calendar-dates.txt 
     -4221 1969-07-20 moon landing
@@ -118,7 +118,7 @@ The same with day-counts, included as a handy file.
     11000
     12000
     19000
-...
+    ...
     34000
     35000 35K-days
     35000
@@ -165,14 +165,14 @@ The same with percentages:
     $ cat data-percent.txt 
     10%
     20%
-...
+    ...
     120%
     125%
     
     $ cat data-percent.txt | ./lifecalc.clj -s
     2962
     5924
-...
+    ...
     35546
     37027
 
@@ -181,7 +181,7 @@ Here is a fun trick, remember the converstions convert a percentage to day.  Cal
     $ cat data-percent.txt | ./lifecalc.clj -s | ./lifecalc.clj -s
     1989-03-20
     1997-04-29
-...
+    ...
     2078-06-05
     2082-06-25
 
