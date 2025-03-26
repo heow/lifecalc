@@ -27,8 +27,12 @@
 
 (defn describe
   ([name max-days lifedays]
-   (format "%s is %d days old, expiration in %d days. (%.2f%% remaining)"
-           name lifedays (- max-days lifedays) (double (- 100 (* 100 (/ lifedays max-days)))) ))
+   (let [days    (- max-days lifedays)
+         weeks   (int (/ days 7))
+         percent (double (- 100 (* 100 (/ lifedays max-days))))
+         ]
+     (format "%s is %d days old, expiration in %d days or %d weeks. (%.2f%% remaining)"
+              name  lifedays                   days       weeks      percent)))
   ([user] (let [cal (make-cal (ld/parse (:birthday user)) (:lifespan user)) ]
             (describe (:name user) (max-days (:lifespan user)) (cal)) )))
 
